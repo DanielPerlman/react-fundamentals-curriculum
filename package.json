@@ -1,10 +1,11 @@
 {
-  "name": "react-fundamentals-curriculum",
+  "name": "react-fundamentals-weather-app",
   "version": "1.0.0",
-  "description": "Curriculum for React.js Program's React Fundamentals course.",
+  "description": "Curriculum for React.js Program's React Fundamentals course, creating a weather application.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "production": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,23 @@
   "bugs": {
     "url": "https://github.com/ReactjsProgram/react-fundamentals-curriculum/issues"
   },
-  "homepage": "https://github.com/ReactjsProgram/react-fundamentals-curriculum#readme"
+  "homepage": "https://github.com/ReactjsProgram/react-fundamentals-curriculum#readme",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "image-webpack-loader": "^2.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "axios": "^0.13.1",
+    "raven-js": "^3.4.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1"
+  }
 }
